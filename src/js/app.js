@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
         tasDescription.value = "";
     });
 
-    const anchors = [].slice.call(document.querySelectorAll("a"));
-
+    const anchors = [].slice.call(document.querySelectorAll(`a[href*="#"]`));
+    console.log(anchors);
     anchors.forEach(anchor => {
         anchor.addEventListener("click", e => {
             e.preventDefault();
