@@ -1,0 +1,23 @@
+{
+  "name": "md-bootstrap",
+  "version": "1.0.0",
+  "description": "todo app using mdb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borschdima/md-bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "todo"
+  ],
+  "author": "Dmytro Borshch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borschdima/md-bootstrap/issues"
+  },
+  "homepage": "https://github.com/borschdima/md-bootstrap#readme"
+}
