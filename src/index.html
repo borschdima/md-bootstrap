@@ -21,8 +21,8 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav mr-auto ml-5 smooth-scroll">
                             <li class="nav-item">
-                                <a class="nav-link" href="#description"
-                                    >Description
+                                <a class="nav-link" href="#about"
+                                    >About me
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -67,7 +67,7 @@
                                 <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">TODO App using MDB</h3>
                                 <hr class="hr-light my-4 w-75" />
                                 <h4 class="subtext-header mt-2 mb-4">This is an example of the TODO application. The main purpose of the project is to test Material design for Bootstrap 4</h4>
-                                <a href="#!" class="btn btn-rounded btn-outline-white"> Contact me</a>
+                                <a href="#app" class="btn btn-rounded btn-outline-white">Check it out!</a>
                             </div>
                         </div>
                     </div>
@@ -78,26 +78,25 @@
         <section>
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-md-12 " id="app">
-                        <h2 class="text-center">Fullstack JavaScript Developer</h2>
-                        <p>
+                    <div class="col-md-12 " id="about">
+                        <h2 class="text-center wow fadeIn">Just a little bit about myself</h2>
+                        <h4 class="text-center wow fadeIn">Fullstack JavaScript Developer</h4>
+                        <p class="wow fadeIn">
                             Need a perfect website in short terms? I can help you with any development tasks. I work fast and deliver a high-quality product. Working with me is always beneficial! Here some information about me:
                         </p>
-                        <p>
+                        <p class="wow fadeIn">
                             I'm interested in web design and front-end development and It has been 1 year I working professionally in these fields. Love of combination of web technology and visual art attracts me into web design and front-end
                             development, and I'm always curious to create, to improvise, and to deliver the best solution that fits with what user wants and needs
                         </p>
-                        <p>It's important for me to build long-term relationships with clients. I'm flexible with my working hours and am happy to work closely with any existing freelancers you work with.</p>
-                        <p>I really enjoy delivering a high quality, well-structured code to my customers. I'm very self-motivated, honest and reliable person. Feel free to get in touch. I'm looking forward to hearing from you!</p>
+                        <p class="wow fadeIn">It's important for me to build long-term relationships with clients. I'm flexible with my working hours and am happy to work closely with any existing freelancers you work with.</p>
+                        <p class="wow fadeIn">I really enjoy delivering a high quality, well-structured code to my customers. I'm very self-motivated, honest and reliable person. Feel free to get in touch. I'm looking forward to hearing from you!</p>
 
                         <div class="row my-2 d-flex ">
-                            <div class="d-none d-lg-block col-lg-4">
+                            <div class="d-none d-lg-block col-lg-4 wow slideInLeft">
                                 <div class="card text-center d-none d-md-block">
                                     <div class="view overlay">
                                         <img class="card-img-top" src="./img/front.png" alt="front" />
-                                        <a href="#!">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
+                                        <div class="mask rgba-white-slight"></div>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Frontend stack</h4>
@@ -105,7 +104,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mx-auto">
+                            <div class="col-lg-4 mx-auto wow fadeIn" data-wow-delay="0.7s">
                                 <div class="card testimonial-card text-center">
                                     <div class="card-up purple-gradient lighten-1"></div>
                                     <div class="avatar mx-auto white">
@@ -121,13 +120,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-none d-lg-block col-lg-4">
+                            <div class="d-none d-lg-block col-lg-4 wow slideInRight">
                                 <div class="card text-center d-none d-md-block">
                                     <div class="view overlay">
                                         <img class="card-img-top" src="./img/server.png" alt="Card image cap" />
-                                        <a href="#!">
-                                            <div class="mask rgba-white-slight"></div>
-                                        </a>
+                                        <div class="mask rgba-white-slight"></div>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="card-title">Backend stack</h4>
@@ -142,18 +139,18 @@
         </section>
 
         <main>
-            <div class="container-fluid purple-gradient mb-5">
+            <div class="container-fluid purple-gradient mb-5" id="app">
                 <div class="container py-4">
                     <h2 class="h2 text-white text-center">TODO App</h2>
                     <div class="row">
-                        <div class="task-info  col-md-12 mx-auto col-lg-5">
+                        <div class="task-info  col-md-12 mx-auto col-lg-5 mb-3">
                             <h4 class="h4 text-center text-white font-weight-light">What is your main focus for today?</h4>
                             <div class="md-form">
-                                <input type="text" id="taskName" class="form-control text-white" />
-                                <label for="taskName" class="text-white">Responsable person</label>
+                                <input type="text" id="taskResponsible" class="form-control text-white" />
+                                <label for="taskResponsible" class="text-white">Responsible person</label>
                             </div>
                             <div class="md-form">
-                                <input type="text" id="taskDescription" class="form-control" />
+                                <textarea id="taskDescription" class="md-textarea form-control text-white" rows="3"></textarea>
                                 <label for="taskDescription" class="text-white">Task description</label>
                             </div>
                             <div class="text-center"><button id="add-task" class="btn btn-rounded btn-outline-white">Add task</button></div>
@@ -161,64 +158,7 @@
                         <div class="task-info col-md-12 mx-auto col-lg-7">
                             <h4 class="h4 text-center text-white font-weight-light">Your tasks:</h4>
                             <div class="row justify-content-space-between" id="task-holder">
-                                <!-- <div class="card col-xs-12 col-sm-6  col-lg-4  mb-2 mx-auto">
-                                    <div class="card-body px-0">
-                                        <h5 class="card-title text-center">Dima</h5>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        <div class="control d-flex justify-content-center">
-                                            <button class="btn btn-danger px-3 py-2">Remove</button>
-                                            <button class="btn btn-success px-3 py-2">Done</button>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <div class="card  mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Dima</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="control d-flex justify-content-center">
-                                                <button class="btn btn-danger px-2 py-2">Remove</button>
-                                                <button class="btn btn-success px-2 py-2">Done</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <div class="card  mb-3 ">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Dima</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="control d-flex justify-content-center">
-                                                <button class="btn btn-danger px-2 py-2">Remove</button>
-                                                <button class="btn btn-success px-2 py-2">Done</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <div class="card  mb-3">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Dima</h5>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="control d-flex justify-content-center">
-                                                <button class="btn btn-danger px-2 py-2">Remove</button>
-                                                <button class="btn btn-success px-2 py-2">Done</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-md-6 col-lg-4">
-                                    <div class="card  mb-3  bg-success">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center text-white">Dima</h5>
-                                            <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
-                                            <div class="control d-flex justify-content-center">
-                                                <button class="btn btn-danger px-2 py-2">Remove</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- Here will be tasks -->
                             </div>
                         </div>
                     </div>
@@ -227,7 +167,7 @@
         </main>
 
         <section>
-            <div class="container mb-5">
+            <div class="container mb-5" id="contact">
                 <form class="text-center border border-light col-lg-5 col-md-10 col-xs-12 mx-auto my-2 p-0" action="#!">
                     <div class="wrapper d-flex purple-gradient p-4">
                         <p class="h4  mx-auto text-white mb-0">Subscribe</p>

@@ -79,7 +79,22 @@ header,
   width: 100%;
 }
 /************************************** APP ***************************/
-.task-info input:focus {
+.task-info input:focus,
+.task-info textarea:focus {
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 1px 0 0 #fff !important;
+}
+
+@media (min-width: 768px) {
+  .view h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .view h3 {
+    font-size: 2.6rem;
+  }
+  .view h4 {
+    font-size: 1rem;
+  }
 }
