@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const anchors = [].slice.call(document.querySelectorAll(`a[href*="#"]`));
-    console.log(anchors);
+
     anchors.forEach(anchor => {
         anchor.addEventListener("click", e => {
             e.preventDefault();
@@ -62,4 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    const feed = new InstagramFeed({
+        accessToken: "1393083154.1677ed0.38ea167129b14880a72cd704224248d6", // required
+        numberOfPhotosInRow: 6, // optional
+        numberOfRows: 2, // optional
+        gapBetweenPhotos: 1, // optional
+        title: "Я в Instagram" // optional
+    });
+
+    feed.init();
 });

@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap&subset=cyrillic");
+
+#instafeed {
+  width: inherit;
+  overflow: hidden;
+  position: relative;
+  transition: 0.7s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+#instafeed .arrow {
+  padding: 0 12px;
+  padding-bottom: 7px;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  font-size: 3em;
+  font-weight: bold;
+}
+#instafeed .arrow:hover {
+  transition: 0.4s ease;
+  background-color: rgba(43, 43, 43, 0.6);
+}
+#instafeed .arrow.forward {
+  transform: translate(50%, -50%);
+  justify-content: flex-start;
+  right: 0;
+}
+#instafeed .arrow.back {
+  display: none;
+}
+
+#instafeed-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+#instafeed .container-inst {
+  position: relative;
+  display: flex;
+  width: 9999px;
+  align-items: flex-start;
+  transition: 0.7s ease;
+}
+#instafeed .block {
+  display: flex;
+  flex-wrap: wrap;
+}
+#instafeed .block .post {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instafeed .block .post:hover .info {
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+#instafeed .block .post:hover img {
+  transform: scale(1.1);
+  transition: 0.8s ease;
+}
+
+#instafeed .block .post .info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#instafeed .block .post .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
+#instafeed .block .post .info .counters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  padding: 0 20px;
+}
+#instafeed .block .post .info .counter-item {
+  display: flex;
+  align-items: center;
+}
+
+#instafeed .block .post .info .icon {
+  margin-right: 5px;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+#instafeed .block .post .info .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#instafeed .block .post img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
