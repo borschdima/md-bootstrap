@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
         numberOfPhotosInRow: 6, // optional
         numberOfRows: 2, // optional
         gapBetweenPhotos: 1, // optional
-        title: "Я в Instagram" // optional
+        title: "Я в Instagram", // optional
+        mobileView: true //optional
     });
 
     feed.init();
